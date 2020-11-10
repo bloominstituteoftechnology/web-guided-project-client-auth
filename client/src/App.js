@@ -20,7 +20,7 @@ function App() {
             <Link to="/login">Login</Link>
           </li>
           <li>
-            <a onClick={logout}>Logout</a>
+            <Link onClick={logout}>Logout</Link>
           </li>
           <li>
             <Link to="/protected">Protected Page</Link>
