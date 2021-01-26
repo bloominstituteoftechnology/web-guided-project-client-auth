@@ -15,7 +15,6 @@ class GasPrices extends React.Component {
 
   formatData = () => {
     const formattedData = [];
-    console.log(this.state.gasPrices);
     this.state.gasPrices.forEach((price, index, arr) => {
       if (price.location === 'US') {
         formattedData.push({
@@ -30,7 +29,6 @@ class GasPrices extends React.Component {
 
   render() {
     const gasPrices = this.formatData();
-    console.log(gasPrices);
     return (
       <div className="gas-prices">
         <div className="title-wrapper">
