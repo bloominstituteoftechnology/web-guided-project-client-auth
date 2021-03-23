@@ -18,6 +18,7 @@ class GasPrices extends React.Component {
     this.state.gasPrices.forEach((price, index, arr) => {
       if (price.location === 'US') {
         formattedData.push({
+          id: index,
           date: moment(price.date).format('MMM'),
           USPrice: price.price,
           HawaiiPrice: arr[index + 1].price
@@ -65,7 +66,7 @@ class GasPrices extends React.Component {
               </div>
               <div>
                 {gasPrices.map(price => (
-                  <div className="price-graph">
+                  <div key={price.id} className="price-graph">
                     <div className="date">
                       <p>{price.date}</p>
                     </div>
