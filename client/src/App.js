@@ -13,7 +13,7 @@ function App() {
             <Link to="/login">Login</Link>
           </li>
           <li>
-            <Link onClick={logout}>Logout</Link>
+            <Link to="/logout">Logout</Link>
           </li>
           <li>
             <Link to="/protected">Protected Page</Link>
@@ -22,7 +22,9 @@ function App() {
         <Switch>
           <Route exact path="/protected" component={GasPrices} />
           <Route path="/login" component={Login} />
-          <Route component={Login} />
+          <Route path="/" component={Login} />
+          <Route path="/logout" component={Logout} />
+          
         </Switch>
       </div>
     </Router>
