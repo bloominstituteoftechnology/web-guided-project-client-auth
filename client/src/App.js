@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import Login from './components/Login';
+import Logout from './components/Logout';
 import GasPrices from './components/GasPrices';
 
 function App() {
