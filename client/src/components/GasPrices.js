@@ -6,12 +6,7 @@ class GasPrices extends React.Component {
   state = {
     gasPrices: []
   };
-
-  componentDidMount() {
-    this.getData();
-  }
-
-  getData = () => {};
+  
 
   formatData = () => {
     const formattedData = [];
