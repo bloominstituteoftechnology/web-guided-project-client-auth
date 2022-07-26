@@ -46,6 +46,7 @@ class GasPrices extends React.Component {
   }
 
   render() {
+    console.log("PROPS in GasPrices:", this.props)
     const gasPrices = this.formatData();
     return (
       <div className="gas-prices">
