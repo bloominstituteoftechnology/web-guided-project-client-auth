@@ -5,6 +5,7 @@ const morgan = require("morgan");
 const port = process.env.PORT || 5001;
 const app = express();
 const data = require("./data");
+
 const token = "ahuBHejkJJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA07i73Gebhu98";
 
 app.use(bodyParser.json());
